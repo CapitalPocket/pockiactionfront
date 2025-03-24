@@ -15,7 +15,7 @@ const Chat = () => {
     _messages = [..._messages, { text, sender: "user" },  { text: 'Procesando...', sender: "bot" }]; 
     setMessages(_messages);
     
-    fetch("http://pockiactionloadbalancer-1198368912.us-east-1.elb.amazonaws.com/postdata", {
+    fetch("https://action.cpocketbot.com/postdata", {
       method: "POST",
       headers: {
           "Content-Type": "application/json"
