@@ -15,7 +15,7 @@ const Chat = () => {
     _messages = [..._messages, { text, sender: "user" },  { text: 'Procesando...', sender: "bot" }]; 
     setMessages(_messages);
     
-    fetch("http://action.pockipayments.com/postdata", {
+    fetch("https://action.pockipayments.com/postdata", {
       method: "POST",
       headers: {
           "Content-Type": "application/json"
